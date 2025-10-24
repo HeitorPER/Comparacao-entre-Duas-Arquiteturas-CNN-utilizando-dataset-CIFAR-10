@@ -61,9 +61,7 @@ Os gráficos de acurácia e perda na validação ao longo das épocas mostram o 
 * **(Acurácia):** O Modelo A atingiu uma acurácia de validação ligeiramente superior e mais estável ao final das 15 épocas em comparação com o Modelo B, que apresentou mais oscilações.
 * **(Perda):** A perda de validação do Modelo A tendeu a aumentar nas épocas finais, sugerindo um leve overfitting. O Modelo B, apesar de oscilar, mostrou momentos de perda menor que o Modelo A, indicando potencial com mais treinamento ou ajuste de hiperparâmetros (como a taxa de dropout ou o otimizador).
 
-*(**Sugestão:** Insira aqui uma captura de tela (screenshot) dos seus gráficos da Célula 6 do notebook)*
-
-![Comparação Acurácia e Perda](link_para_imagem_graficos.png)
+![Comparação Acurácia e Perda](comparacaoAcuraciaePerda.png)
 
 ### Análise das Matrizes de Confusão
 As matrizes de confusão mostram como cada modelo classifica as imagens do conjunto de teste:
@@ -71,9 +69,7 @@ As matrizes de confusão mostram como cada modelo classifica as imagens do conju
 * **Modelo A (Baseline):** Apresentou bom desempenho geral, com a diagonal principal concentrando a maioria das previsões corretas. Confusões notáveis ocorreram entre classes visualmente similares (ex: Gato vs Cachorro, Caminhão vs Automóvel).
 * **Modelo B (Melhorado):** Apesar da acurácia final ligeiramente menor no teste, a matriz de confusão pode revelar se ele teve melhor desempenho em classes específicas ou se as confusões foram distribuídas de forma diferente. No seu caso, o desempenho foi inferior ao Modelo A. As confusões mais significativas ocorreram entre Gato/Cachorro e Pássaro/Cervo/Sapo.
 
-*(**Sugestão:** Insira aqui uma captura de tela (screenshot) dos seus heatmaps da Célula 8 do notebook)*
-
-![Comparação Matrizes de Confusão](link_para_imagem_matrizes.png)
+![Comparação Matrizes de Confusão](MatrizesDeConfusao.png)
 
 ### Conclusão da Comparação
 Neste experimento específico com 15 épocas, o **Modelo A (Baseline)** apresentou uma acurácia ligeiramente superior no conjunto de teste (70.20%) em comparação ao Modelo B (68.72%). Embora o Modelo B utilize técnicas de regularização como Batch Normalization e Dropout, ele pode necessitar de mais épocas para convergir melhor ou de um ajuste fino nos hiperparâmetros para superar o modelo mais simples. O overfitting observado no Modelo A nas últimas épocas também sugere que técnicas como *early stopping* poderiam ser benéficas.
