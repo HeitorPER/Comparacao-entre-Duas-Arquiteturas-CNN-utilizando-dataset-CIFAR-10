@@ -67,7 +67,7 @@ Os gráficos de acurácia e perda na validação ao longo das épocas mostram o 
 As matrizes de confusão mostram como cada modelo classifica as imagens do conjunto de teste:
 
 * **Modelo A (Baseline):** Apresentou bom desempenho geral, com a diagonal principal concentrando a maioria das previsões corretas. Confusões notáveis ocorreram entre classes visualmente similares (ex: Gato vs Cachorro, Caminhão vs Automóvel).
-* **Modelo B (Melhorado):** Apesar da acurácia final ligeiramente menor no teste, a matriz de confusão pode revelar se ele teve melhor desempenho em classes específicas ou se as confusões foram distribuídas de forma diferente. No seu caso, o desempenho foi inferior ao Modelo A. As confusões mais significativas ocorreram entre Gato/Cachorro e Pássaro/Cervo/Sapo.
+* **Modelo B (Melhorado):** Apesar da acurácia final ligeiramente menor no teste, a matriz de confusão pode revelar se ele teve melhor desempenho em classes específicas ou se as confusões foram distribuídas de forma diferente. Nesse caso, o desempenho foi inferior ao Modelo A. As confusões mais significativas ocorreram entre Gato/Cachorro e Pássaro/Cervo/Sapo.
 
 ![Comparação Matrizes de Confusão](MatrizesDeConfusao.png)
 
